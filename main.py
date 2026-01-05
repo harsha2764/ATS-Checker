@@ -8,7 +8,7 @@ from PyPDF2 import PdfReader
 app = Flask(__name__)
 
 # ✅ Gemini client (environment variable)
-client = Client(api_key="AIzaSyCVSNeUhi3dnFRH7YrBmnFFaBbmoo5v2Ec")
+client = Client(api_key="Gemini API Key")
 
 
 @app.route("/")
@@ -98,3 +98,4 @@ Return ONLY valid JSON in this exact format:
 
 if __name__ == "__main__":
     app.run(port=2000, debug=True)
+
